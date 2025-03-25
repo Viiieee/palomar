@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Landing</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <style>
+   
+{
+
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+  }
+  #about {
+    margin-top: 100px;
+  }
+  body {
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    background-color: #90c5cc;
+  
+ 
+
+  }
+  
+ 
+  #header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #080808;
+    color: white;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  #header-img {
+    height: 60px;
+    margin-right: 1px;
+  }
+  
+  #nav-bar {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+
+  main {
+    margin-top: 80px; 
+    padding: 20px;
+  }
+  
+  
+  
+ 
+  #form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 100px;
+  }
+  
+  #email {
+    width: 100%;
+    height: 40px; 
+    padding: 10px;
+    color: black;
+    margin: 10px 0;
+    border: 1px solid black;
+  }
+  
+  #submit {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background-color: #555;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .card {
+    border: 1px solid #312f2f;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 350px;
+  }
+  ul img {
+    width: 300px;
+    height: 200px;
+  }
+  iframe {
+    text-align: center;
+  }
+  
+
+  @media (max-width: 768px) {
+    #header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    #nav-bar {
+      margin-top: 10px;
+    }
+  
+    #form {
+      width: 100%;
+    }
+  }
+  </style>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://img.freepik.com/premium-vector/handbag-logo-template_758228-495.jpg?semt=ais_hybrid">
+      <nav id="nav-bar">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#video">Video</a>
+        <a class="nav-link" href="#form">SignUp</a>
+      </nav>
+    </header>
+    <section id="about">
+      <h2>Bags</h2>
+    <p>There are various types of Bags:</p>
+    <ul>
+        <div class="card"><li><strong>Channel:</strong> Chanel handbags, particularly the iconic flap bag, are known for their timeless design, meticulous craftsmanship, and enduring style, featuring quilted leather, a signature CC turn-lock closure, and a chain strap. </li>
+        <img src="https://www.levelshoes.com/media/catalog/product/cache/d6b308721eea44dce854000e2ac7b2ba/p/l/pldchnlbgblck2-black_4.jpg"></div>
+        <div class="card"><li><strong>Louis Vuitton:</strong> Louis Vuitton bags are renowned luxury handbags and accessories, known for their iconic monogram canvas, exquisite craftsmanship, and timeless designs, including popular styles like the Speedy and Neverfull. </li>
+        <img src="https://cdn.shopify.com/s/files/1/0565/3630/1745/files/modern-review-wfo-vs-wfh-youtube-thumbnail-5.png?v=1704476866"></div>
+        <div class="card"><li><strong>Gucci:</strong> Gucci handbags come in a range of sizes and styles. They are small or medium-sized, made of leather, canvas, and suede, and feature zippered compartments and metal locks or magnetic snap closures. Some have adjustable straps, usually made of leather.</li>
+        <img src="https://blog.fashionphile.com/wp-content/uploads/2021/08/Hero_7.jpg"></div>
+    </ul>
+    </section>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/N07nQ-uUsww?si=8KATmcuRsQZyFl6S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input type="email" id="email" name="email" placeholder="Enter Email" required>
+      <input type="submit" id="submit">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palomar's Portfolio Glow</title>
+    <style>
+        body {
+            background-image: url(https://tse1.mm.bing.net/th?id=OIP.6u6P_bXMHeuA19rvQ-yVsAHaEK&pid=Api&P=0&h=220);
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            height: 100vh;
+            margin: 0;
+            color: #535758;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: linear-gradient(to right, #63b3e9, #d634c9);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: rgb(184, 40, 88);
+            animation: slideDown 2s ease-out;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: rgb(219, 64, 149);
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            color: #8135b4;
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        #intro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            text-align: center;
+        }
+        #intro .card {
+            background: #66cae9;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        #intro h2 {
+            margin-top: 0;
+        }
+        #intro button {
+            background: #9a39b8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        #intro button:hover {
+            background: #f16b42;
+        }
+        #projects {
+            padding: 40px 20px;
+            background: #d77ae4;
+        }
+        #projects h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background: #7a38b1;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #6a1d7e;
+            color: rgb(58, 175, 93);
+            padding: 20px;
+            text-align: center;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: rgb(83, 167, 44);
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #d49cd6;
+            animation: bounce 0.5s;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        body.dark-mode {
+            background-color: #520e5f;
+            color: #070303;
+        
+        }
+        header.dark-mode {
+            background: linear-gradient(to right, #333, #555);
+        }
+        .project-card.dark-mode {
+            background: #333;
+        }
+        footer.dark-mode {
+            background: #333;
+        }
+        #scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            display: none;
+            background: #4d4fe0;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        #scroll-to-top:hover {
+            background: #ec805f;
+        }
+        #contact h2 {
+    font-size: 20px;
+    color: #0f5f40;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#contact a {
+    color: #4428a8;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s ease;
+}
+#contact a:hover {
+    color: #1d5794; 
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Palomar</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="intro">
+        <div class="card">
+            <h2>Hello, and welcome to my portfolio!</h2>
+            <p>Welcome to my portfolio, where I try to blend creativity with just the right amount of coffee <span>I specialize in </span> cupping. and my superpower is turning complex problems into easy-to-digest solutions.</p>
+            <p>When I’m not busy making magic happen in the professional world, you’ll find me <strong>making coffee</strong> and I’m going to make the perfect cup of coffee.</p>
+            <button onclick="toggleDarkMode()">Dark Mode</button>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>EduNews</h3>
+                <a href="edunews.html"><p>Description of edunews.</p></a>
+            </div>
+            
+            <div class="project-card">
+                <h3>Landing</h3>
+                <a href="landing.html"><p>Description of landing.</p></a>
+            </div>
+
+            <div class="project-card">
+                <h3>Technical</h3>
+                <a href="technical.html"><p>Description of technical.</p></a>
+            </div>
+            <div class="project-card">
+                <h3>Piano</h3>
+                <a href="piano.html"><p>Description of piano.</p></a>
+            </div>
+            <div class="project-card">
+                <h3>Penguin</h3>
+                <a href="penguin.html"><p>Description of penguin.</p></a>
+            </div>
+            <div class="project-card">
+                <h3>Ferris Wheel</h3>
+                <a href="ferris wheel.html"><p>Description of ferris wheel.</p></a>
+            </div>
+            <div class="project-card">
+                <h3>Magazine</h3>
+                <a href="magazine.html"><p>Description of magazine.</p></a>
+            </div>
+            <div class="project-card">
+                <h3>Skyline</h3>
+                <a href="skyline.html"><p>Description of skyline.</p></a>
+            </div>
+            <div class="project-card">
+                <h3>Balance Sheet</h3>
+                <a href="balance sheet.html"><p>Description of balance sheet.</p></a>
+            </div>
+            <div class="project-card">
+                <h3>Cat Painting</h3>
+                <a href="cat painting.html"><p>Description of cat painting.</p></a>
+            </div>
+            <div class="project-card">
+                <h3>Quiz</h3>
+                <a href="quiz.html"><p>Description of quiz.</p></a>
+            </div>
+            <div class="project-card">
+                <h3>Nutrition Label</h3>
+                <a href="nutrition label.html"><p>Description of nutrion label.</p></a>
+            </div>
+            <div class="project-card">
+                <h3>Photo Gallery</h3>
+                <a href="photo gallery.html"><p>Description of photo gallery.</p></a>
+            </div>
+            <div class="project-card">
+                <h3>Rothko Painting</h3>
+                <a href="rothko painting.html"><p>Description of rothko painting.</p></a>
+            </div>
+            <div class="project-card">
+                <h3>Registration Form</h3>
+                <a href="registration form.html"><p>Description of registration form</p></a>
+            </div>
+            <div class="project-card">
+                <h3>Colored Markers</h3>
+                <a href="color marker.html"><p>Description of cat nutrion colored markers</p></a>
+            </div>
+            <div class="project-card">
+                <h3>Cafe Menu</h3>
+                <a href="cafe menu.html"><p>Description of  cafe menu</p></a>
+            </div>
+            <div class="project-card">
+                <h3>Cat Photo App</h3>
+                <a href="cat photo app.html"><p>Description of cat photo app</p></a>
+            </div>
+            <div class="project-card">
+                <h3>Survey Form</h3>
+                <a href="survey form.html"><p>survey form</p></a>
+
+            </div>
+                <div class="project-card">
+                    <h3>Tribute Page</h3>
+                    <a href="tribute page.html"><p>tribute page</p></a>
+    
+
+
+        </div>
+    </section>
+    <footer id="footer">
+        <p>&copy; 2025 Salvei Angel Palomar. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#facebook">Facebook</a>
+            <a href="#twitter">Twitter</a>
+            <a href="#linkedin">LinkedIn</a>
+        </div>
+    </footer>
+
+    <section id="contact">
+        <h2>If you want to get to know me, feel free to contact me through any of my social media accounts.</h2>
+        <ul>
+            <li><a href="https://web.facebook.com/salvieangel.palomar" target="_blank">Visit Our Facebook Page</a></li>
+            <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqWgTjKMbmHjCVZGQlHGQDrfhffrXCGhddSQbZsNLrZjrhbfsGpKDFhfqHPrDkDpQffKNq">Send An Email</a></li>
+            <li><a href="https://www.instagram.com/cutiie_viiee?igsh=MXozNnVidjQ4Y2hl">Follow Us on Instagram</a></li>
+        </ul>
+
+    </section>
+    <button id="scroll-to-top" onclick="scrollToTop()">↑</button>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            document.querySelector('header').classList.toggle('dark-mode');
+            document.querySelectorAll('.project-card').forEach(card => card.classList.toggle('dark-mode'));
+            document.querySelector('footer').classList.toggle('dark-mode');
+        }
+
+        window.onscroll = function() {
+            const scrollToTopButton = document.getElementById('scroll-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        };
+
+        function scrollToTop() {   
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

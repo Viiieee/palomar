@@ -1,0 +1,169 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+  </head>
+   <style>
+    body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:#E4EFE7;
+  }
+  
+  #navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    padding: 10px;
+    opacity: 1;
+    color: #fff;
+    background-color: #6639e0;
+  }
+  
+  #navbar header
+   {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    
+  }
+   
+  .nav-link {
+    display: block;
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 30px;
+   
+  }
+  
+
+  .nav-link:hover {
+    color: rgb(85, 85, 199);
+
+  }
+  
+  #main-doc {
+    margin-left: 220px;
+    padding: 20px;
+    max-width: 800px;
+   
+  }
+  
+  .main-section  {
+    margin-bottom: 50px;
+    line-height: 28px;
+  }
+  
+  .main-section header {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  @media (max-width: 768px) {
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  #main-doc {
+    margin-left: 0;
+    padding-top: 20px
+  }
+  }
+
+   </style>
+
+  <body>
+    <nav id="navbar">
+      <header>Technical Documentation</header>
+      <a class="nav-link" href="#First_topic">Introduction to SQL</a>
+      <a class="nav-link" href="#Second_topic">SQL Syntax</a>
+      <a class="nav-link" href="#Third_topic">SQL SELECT Statement</a>
+      <a class="nav-link" href="#Fourth_topic">SQL SELECT DISTINCT Statement</a>
+      <a class="nav-link" href="#Fifth_topic">SQL WHERE Clause</a>
+      <a class="nav-link" href="#Sixth_topic">SQL ORDER BY Keyword</a>
+      
+      </nav>
+      
+      <main id="main-doc">
+            
+            <section id="First_topic" class="main-section" >
+                <header>Introduction</header>
+                <p>SQL is a standard language for accessing and manipulating databases.</p>
+            
+            </section>
+
+            <section id="Second_topic" class="main-section">
+            <header>SQL Statements</header>
+            <p></p>
+                1. Most of the actions you need to perform on a database are done with SQL statements.
+
+                SQL statements consist of keywords that are easy to understand.
+                
+                The following SQL statement returns all records from a table named "Customers":</p> 
+            <ul>
+                <li>Create DataBase</li>
+                <li>Alert DataBase</li>
+                <li>Drop Table</li>
+                <li>Create Index</li>
+                <li>Drop Index
+                </li>
+            </ul>
+
+            
+
+            <section id="Third_topic" class="main-section">
+            <header>SQL SELECT Statement</header>
+                <p>Here, column1, column2, ... are the field names of the table you want to select data from.
+
+                  The table_name represents the name of the table you want to select data from.
+                  
+                  </p>
+                <ul>
+                    <li>To insert data into a database</li>
+                    <li>To select data from a database</li>
+                    <li>To delete data from a database</li>
+                </ul>
+            
+            
+            </section>
+
+            <section id="Fourth_topic" class="main-section">
+            <header>SQL SELECT DISTINCT Statement</header>
+                <p>Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.
+                </p>
+
+                <p>Select all the different countries from the "Customers" table:</p>
+                <ul>
+                    <li>SELECT UNIQUE Country FROM Customers;/</li>
+                    <li>SELECT Country FROM Customers;</li>
+                    <li>SELECT DISTINCT Country FROM Customers;</li>
+                </ul>
+            </section>
+
+            <section id="Fifth_topic" class="main-section">
+                <header>SQL WHERE Clause</header>
+                <p>The ORDER BY keyword is used to sort the result-set in ascending or descending order. </p>
+
+                <ul>
+                    <li>To filter records based on a condition</li>
+                    <li>To group records with the same value</li>
+                    <li>To sort records in ascending or descending order</li>
+                </ul>
+            </section>
+
+            <section id="Sixth_topic" class="main-section">
+                <header>SQL ORDER BY Keyword</header>
+                <h1>The SQL ORDER BY</h1>
+
+                <p>The ORDER BY keyword is used to sort the result-set in ascending or descending order.</p>
+                <p>The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.</p>
+                <p>The following S
