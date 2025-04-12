@@ -1,4 +1,13 @@
-function getAverage(scores) {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  function getAverage(scores) {
   let sum = 0;
   for (const score of scores) {
     sum += score;
@@ -43,3 +52,4 @@ function studentMsg(totalScores, studentScore) {
 
 
 console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
+
