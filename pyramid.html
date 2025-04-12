@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pyramid</title>
+  <style>
+    body {
+      font-family: monospace;
+      padding: 20px;
+    }
+    pre {
+      background-color: #f0f0f0;
+      padding: 10px;
+      display: inline-block;
+    }
+  </style>
 </head>
 <body>
-    <script>
-        const character = "!";
-const count = 10;
-const rows = [];
-let inverted = false;
 
-function padRow(rowNumber, rowCount) {
-  return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
-}
+  <h1>Triangle Pattern Generator</h1>
+  <pre id="output"></pre>
 
-for (let i = 1; i <= count; i++) {
-  if (inverted) {
-    rows.unshift(padRow(i, count));
-  } else {
-    rows.push(padRow(i, count));
-  }
-}
+  <script>
+    const character = "!";
+    const count = 10;
+    const inverted = false; // Change to true for inverted triangle
+    const rows = [];
 
-let result = ""
+    function padRow(rowNumber, rowCount) {
+      const spaces = " ".repeat(rowCount - rowNumber);
+      const chars = character.repeat(2 * rowNumber - 1);
+      return spaces + chars + spaces;
+    }
 
-for (const row of rows) {
-  result = result + row + "\n";
-}
+    for (let i = 1; i <= count; i++) {
+      const row = padRow(i, count);
+      if (inverted) {
+        rows.unshift(row);
+      } else {
+        rows.push(row);
+      }
+    }
 
-console.log(result);
-    </script>
+    const result = rows.join("\n");
+    document.getElementById("output").textContent = result;
+    console.log(result); // Optional debug output
+  </script>
 </body>
 </html>
